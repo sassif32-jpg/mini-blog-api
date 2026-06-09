@@ -1,0 +1,26 @@
+
+
+header{
+    background-color: aquamarine;
+    padding: 80px 0;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: blue;
+    margin-top: 5%;
+    color: aliceblue;
+    padding: 3%;
+}
+
+.card{
+    background-color: green;
+    border: 0;
+    border-radius: 20px;
+
+}
+
+.sfondo{
+    background-color: blue;
+
+}
