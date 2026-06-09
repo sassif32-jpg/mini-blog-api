@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid sfondo">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -23,78 +23,97 @@
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="autori.html">autori</a>
+          <a class="nav-link" href="meteo.html">Meteo attuale</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="posts.html">posts</a>
+          <a class="nav-link" href="previsioni.html">Previsioni</a>
         </li>
-
       </ul>
     </div>
   </div>
 </nav>
-    
-    <header>
-        <h1> Benvenuto nel mio blog! </h1>
-        <p>Sito Multipagina che mostra vari post utilizzando chiamate api e Jsonplaceholder</p>
-    </header>
 
-    <main class="container">
-        <section>
-            <h2> Utilizzo del sito </h2>
-            <p> Il sito mostra Post e Autori usando Jsonplaceholder </p>
-            <p> E' possibile spostarsi nelle varie sezioni usando la navbar </p>
-            <ul>
-                <li> La pagina <a href="autori.html">Autori</a> Mostra gli autori usando la chiamata API: https://jsonplaceholder.typicode.com/users</li>
-            <li> La pagina <a href="posts.html">Post</a> Mostra i post usando la chiamata API: https://jsonplaceholder.typicode.com/posts</li>
-            </ul>
-        </section>
+        <header>
+            <h1>Benvenuto nella dashboard del meteo!</h1>
+            <p>Sito Multipagina che mostra dati meteo recuperati da api e Open-Meteo</p>
+        </header>
 
-        <section>
-            <h2> Sezioni preincipali </h2>
-            <div class="row g-4">
+        <main class="container">
+            <section>
+                <h2>Utilizzo del sito</h2>
+                <p>Il sito mostra la situazione meteo in varie città </p>
+                <p>E' possibile spostarsi nelle varie città utilizzando la navbar</p>
+                <ul>
+                <li> La pagina <a href="meteo.html">Meteo</a> Mostra la situazione meteo usando la chiamata API: https://api.open-meteo.com/v1/forecast</li>
+              <li> La pagina <a href="previsioni.html">Previsioni</a> Mostra le previsioni meteo usando la chiamata API: https://api.open-meteo.com/v1/forecast</li>
+              </ul>
+            </section>
+
+            <section>
+                <h2>Seleziona una città</h2>
+                <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" data-lat="43.7696" data-lon="11.2558">
                         <div class="card-body">
-                            <h3 class="badge">Post</h3>
-                            <h4 class="card-title">Post Dinamici</h4>
-                            <p class="card-text">Mostra i post caricati dalla chiamata</p>
+                            <h3 class="badge">Città</h3>
+                            <h4 class="card-title">Firenze</h4>
+                            <p class="card-text">Lat: 43.7696 <br>Lon: 11.2558</p>
                         </div>
                     </div> 
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" data-lat="41.9028" data-lon="12.4964">
                         <div class="card-body">
-                            <h3 class="badge">Autori</h3>
-                            <h4 class="card-title">Autori Dinamici</h4>
-                            <p class="card-text">Mostra gli Autori caricati dalla chiamata API</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="badge">Home</h3>
-                            <h4 class="card-title">Home Page</h4>
-                            <p class="card-test">E' la pagina principale</p>
+                            <h3 class="badge">Città</h3>
+                            <h4 class="card-title">Roma</h4>
+                            <p class="card-text">Lat: 41.9028 <br>Lon: 12.4964</p>
                         </div>
                     </div> 
                 </div>
-            </div>
 
-        </section>
+                <div class="col-md-4">
+                    <div class="card" data-lat="45.4642" data-lon="9.1900">
+                        <div class="card-body">
+                            <h3 class="badge">Città</h3>
+                            <h4 class="card-title">Milano</h4>
+                            <p class="card-text">Lat: 45.4642 <br>Lon: 9.1900</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" data-lat="48.8566" data-lon="2.3522">
+                        <div class="card-body">
+                            <h3 class="badge">Città</h3>
+                            <h4 class="card-title">Parigi</h4>
+                            <p class="card-text">Lat: 48.8566 <br>Lon: 2.3522</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card" data-lat="35.6762" data-lon="139.6503">
+                        <div class="card-body">
+                            <h3 class="badge">Città</h3>
+                            <h4 class="card-title">Tokyo</h4>
+                            <p class="card-text">Lat: 35.6762 <br>Lon: 139.6503</p>
+                        </div>
+                    </div> 
+                </div>
+
+            </section>
+
         </main>
 
+        
         <footer>
             <h3>Autore: <strong> Sassi Francesca </strong></h3>
-            <p> Il codice del sito è disponibile sulla repository <a href="https://github.com/sassif32-jpg/mini-blog-api">mini-blog-api</a></p>
+            <p> Il codice del sito è disponibile sulla repository <a href="https://github.com/sassif32-jpg/dashboard-meteo-api">dashboard-meteo-api</a></p>
 
         </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
     </body>
-
-    </html>
+</html>
